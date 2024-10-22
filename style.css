@@ -1,27 +1,125 @@
+/* style.css */
+
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    background: #f0f4f7;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0e7ff; /* Background color */
 }
 
 .container {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 30px;
-    background-color: #ffffff; /* Background color for container */
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 90%;
     max-width: 400px;
+    width: 100%;
 }
 
-/* TODO: Add styles for labels, inputs, buttons, and output text */
+/* Title and label styles */
 h1 {
-    font-size: 2.2em;
+    font-size: 24px;
+    color: #333;
     margin-bottom: 20px;
-    color: #4a4a4a; /* Header color */
 }
 
-/* Add more styles here as needed */
+label {
+    font-size: 14px;
+    color: #4f4646;
+    display: block;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 18px;
+    color: #453f3f;
+    margin-bottom: 10px;
+}
+
+/* Input styles */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#passwordOutput {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+    word-wrap: break-word;
+}
+
+/* Copy button style */
+#copyBtn {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+#copyBtn:hover {
+    background-color: #218838;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+    }
+}
